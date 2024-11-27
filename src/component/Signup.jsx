@@ -31,6 +31,12 @@ const Signup = () => {
       <label className="label">
         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
       </label>
+      <div className='flex'>
+      <input className='mr-3' type="checkbox" name="checked" id="" required/>
+      <p>Accept term and conditions</p>
+
+
+      </div>
     </div>
     <div className="form-control mt-6">
       <button className="btn bg-yellow-400  ">SignUP</button>
