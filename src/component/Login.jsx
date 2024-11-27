@@ -1,5 +1,9 @@
 
 import React, { useState } from 'react'
+import { IoMdEye } from "react-icons/io";
+import { IoMdEyeOff } from "react-icons/io";
+
+
 
 const Login = () => {
 
@@ -18,8 +22,13 @@ const Login = () => {
       <label className="label">
         <span className="label-text">Password</span>
       </label>
+      <div className='relative'>
       <input type={ show?'text':'password'} placeholder="password" className="input input-bordered" required />
-      <button onClick={()=>setShow(prev => !prev)} >show</button>
+      <button className='absolute top-3 right-2' onClick={()=>setShow(prev => !prev)} >{show?<IoMdEyeOff />:<IoMdEye />
+      }</button>
+      </div>
+
+
       <label className="label">
         <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
       </label>
